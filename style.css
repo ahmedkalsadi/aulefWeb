@@ -3,7 +3,7 @@
         padding: 0;
         box-sizing: border-box;
         text-decoration: none;
-        font-family: 'Roboto', sans-serif;
+        font-family: monospace;
     }
 
     html {
@@ -21,7 +21,7 @@
     }
 
     ::-webkit-scrollbar-thumb {
-        background: rgb(0, 0, 0);
+        background: #32465a;
     }
 
     ::-webkit-scrollbar-thumb:hover {
@@ -35,7 +35,7 @@
     }
 
     .menu-btn {
-        color: #fff;
+        color: rgb(0, 0, 0);
         font-size: 25px;
         cursor: pointer;
         display: none;
@@ -53,11 +53,12 @@
         /* background:  #32465a; */
         z-index: 999;
         padding: 10px 80px 10px 60px;
-        transition: all 0.3s cubic-bezier(0.25, 0.1, 0.39, 1.03);
+        /* transition: all 0.3s cubic-bezier(0.25, 0.1, 0.39, 1.03); */
     }
 
     .navbar.sticky {
         /* background:  #32465a; */
+        opacity: 90%;
     }
 
     .navbar .max-width {
@@ -94,32 +95,44 @@
     /* Home styling */
     .home {
         display: block;
-        /* background: url(Antalya/20210313162348_IMG_8785-01.jpeg) no-repeat center fixed ; */
-        background-size: 1366px;
-        height: 100vh;
+        /* background-size: 1366px; */
+        height: 90vh;
         min-height: 400px;
+    }
+
+    .home .home-content {
+        display: block;
+        align-items: center;
+        text-align: center;
+
     }
 
     .home .home-content .home-view {
         display: flex;
+        text-align: center;
         align-items: center;
+        flex-direction: column;
+        width: auto;
+        height: 600px;
+        justify-content: center;
     }
 
     .home .home-content .home-view img {
         text-align: center;
-        width: 25%;
+        width: 200px;
         padding: 0;
         margin: 0;
     }
 
-    .home .home-content .home-view .hunt {
-        position: absolute;
-        top: 246px;
-        right: 108px;
+    .home .home-content .home-view div.hunt {
+        display: flex;
+        /* position: absolute; */
+        text-align: center;
         width: 600px;
-        height: 96px;
-        border: 1px solid #73AD21;
+        height: auto;
+        /* border: 1px solid #73AD21; */
         font-size: 30px;
+        align-items: center;
 
     }
 
@@ -210,7 +223,6 @@
         display: inline-block;
         width: calc(33% - 30px);
         background: #000000;
-        ;
         /* border-radius: 6px; */
         padding: 20px 25px;
         border: 5px outset #ffffff;
@@ -245,13 +257,13 @@
 
 
     /*photo styling*/
-    .photo {
-        /* display: flex; */
+    /* .photo {
+        display: flex;
     }
 
     .photo .max-width {
-        /* padding:0 40px 0 40px ; */
-    }
+        padding:0 40px 0 40px ;
+    } */
 
     .photo .title {
         color: #32465a;
@@ -277,7 +289,7 @@
         width: calc(50%);
         padding: 10px;
         height: 300px;
-        /* Should be removed. Only for demonstration */
+        background: #365262;
     }
 
     /* Clear floats after the columns */
@@ -291,8 +303,50 @@
         opacity: 100%;
     } */
 
+    /*team styling*/
+    .team {
+        display: block;
+        /* background: url(Layer.png) no-repeat center; */
+    }
 
-    .
+    /* .team .max-width {
+    margin: auto 0 auto 0;
+} */
+    .team .title {
+        position: relative;
+        font-family: 'Indie Flower', cursive;
+        color: #32465a;
+        font-size: 60px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .team .team-content {
+        display: inline-block;
+        text-align: center;
+    }
+
+
+
+    .team .team-content .team-in {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        border: 1px solid;
+
+    }
+
+    .team .team-content .team-in .team-card {
+        border: 1px solid;
+        width: 100%;
+        text-align: left;
+    }
+
+    .team .team-content .team-in .team-card img {
+        width: 400px;
+    }
+
     /* contact section styling */
     /* input,textarea{
         background: #f19d37;
@@ -300,11 +354,11 @@
 
     .contact {
         display: block;
-        background: url(Layer.png) no-repeat center;
-
     }
 
-    .contact .max-width {}
+    /* .contact .max-width {
+        
+    } */
 
     .contact .title {
         position: relative;
@@ -318,6 +372,8 @@
     .contact .contact-content {
         display: flex;
         width: 100%;
+        height: 50vh;
+
     }
 
     .contact .contact-content .column {
@@ -458,7 +514,7 @@
             width: 100%;
             left: -100%;
             top: 0;
-            background: black;
+            background: rgb(255, 255, 255);
             text-align: center;
             padding-top: 80px;
             transition: all 0.3s ease;
