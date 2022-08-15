@@ -492,12 +492,12 @@
         background: none;
     }
 
-    /* footer {
+    footer {
         background: none;
         padding: 15px 23px;
         color: rgb(0, 0, 0);
         text-align: center;
-    } */
+    }
 
     @media (max-width: 947px) {
         .menu-btn {
